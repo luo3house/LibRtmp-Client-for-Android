@@ -2,7 +2,8 @@
 
 buildscript {
     repositories {
-        jcenter()
+        // jcenter()
+        mavenCentral()
         google()
     }
     dependencies {
@@ -13,12 +14,14 @@ buildscript {
 }
 plugins {
     id 'maven-publish'
+    id 'maven'
     id 'signing'
 }
 
 allprojects {
     repositories {
-        jcenter()
+        // jcenter()
+        mavenCentral()
         google()
     }
 }
